@@ -19,3 +19,27 @@
     top: 190px;
     left: 30px;
 }
+svg path{
+    fill: transparent;
+    stroke: rgb(241, 241, 241);
+    stroke-width: 0.7;
+    stroke-dasharray: 70;
+    stroke-dashoffset: 200;
+    animation: text 2s reverse infinite;
+}
+@keyframes text {
+    0%{
+        stroke-dashoffset: 70;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+.top{
+    background-color: black;
+}
+
+
+.Box{
+    background-color: lightgray;
+}
