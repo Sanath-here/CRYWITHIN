@@ -50,6 +50,19 @@ svg path{
 p{
     font-size: 60px;
 }
+<<<<<<< HEAD
+=======
+.top{
+           
+           background-image: url(cry\ within.jpg) ;
+           height: 250px;
+           width: 100%;
+           position: relative;
+           top: -75px;
+
+           
+        }
+>>>>>>> c3f94ac3cf0f0e5690fc0ac754dc331dcad21169
 
 .top{
         background-image: url(cry\ within.jpg) ;
@@ -71,5 +84,10 @@ p{
             animation: flicker 3s infinite;
             position: absolute;
             top: 50px;
+<<<<<<< HEAD
             left: 36%;
+=======
+            left: 38%;
+
+>>>>>>> c3f94ac3cf0f0e5690fc0ac754dc331dcad21169
 }
