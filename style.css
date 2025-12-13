@@ -35,11 +35,8 @@ svg path{
         stroke-dashoffset: 0;
     }
 }
-.top{
-    background-color: black;
-}
-
-
-.Box{
-    background-color: lightgray;
+#pottii{
+    height: 700px;
+    background-color: antiquewhite;
+   
 }
