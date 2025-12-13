@@ -1,11 +1,19 @@
 .Menus{
     display: flex ;
-    gap: 10px;
+    gap: 50px;
+    position: absolute;
+    left: 500px;
+    font-size: larger;
+
 }
 
 .Menus :hover{
-    background-color: blueviolet;
+    transform: translateY(-9px) scale(1.5);
+    
+   
+
 }
+
 #c1{
     background-color: antiquewhite;
     height: 500px;
