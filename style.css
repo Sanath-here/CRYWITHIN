@@ -42,6 +42,8 @@ svg path{
     height: 700px;
     background-color: lightgray;
     border-radius: 20px;
+    position: relative;
+    top: -75px;
    
 }
 
@@ -50,11 +52,14 @@ p{
 }
 
 .top{
-     
-    background: url(cry\ within.jpg);
-}
+        background-image: url(cry\ within.jpg) ;
+        height: 250px;
+        width: 100%;
+        position: relative;
+        top: -75px;
+    }
 
-   @keyframes flicker {
+@keyframes flicker {
             0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
             20%, 24%, 55% { opacity: 0.3; }
         }     
@@ -64,5 +69,7 @@ p{
             color: darkred;
             text-shadow: 0 0 15px red;
             animation: flicker 3s infinite;
-
+            position: absolute;
+            top: 50px;
+            left: 36%;
 }
