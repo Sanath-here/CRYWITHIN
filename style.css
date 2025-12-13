@@ -1,0 +1,16 @@
+.Menus{
+    display: flex ;
+    gap: 10px;
+}
+
+.Menus :hover{
+    background-color: blueviolet;
+}
+#c1{
+    background-color: antiquewhite;
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 190px;
+    left: 30px;
+}
