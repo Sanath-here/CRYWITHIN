@@ -48,10 +48,11 @@ svg path{
 p{
     font-size: 60px;
 }
+
 .top{
      
-            background: url(cry\ within.jpg);
-        }
+    background: url(cry\ within.jpg);
+}
 
    @keyframes flicker {
             0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
