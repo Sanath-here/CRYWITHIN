@@ -3,8 +3,9 @@
     gap: 100px;
     position: absolute;
     left: 410px;
-    top: 10px;
+    top: 15px;
     font-size: medium;
+    text-decoration: none;
     
     background-color: transparent;
     letter-spacing: 6px;
@@ -15,9 +16,10 @@
 }
 
 .Menus :hover{
-    transform: translateY(-9px) scale(1.5);
+    transform: translateY(-9px) scale(1.2);
     animation: flicker 1s infinite;
     color: rgba(255, 0, 0, 0.5);
+    
     
     
 }
@@ -107,6 +109,7 @@ p{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
+    
 }
 .btn:hover {
             background: red;
@@ -162,7 +165,7 @@ p{
        
 }
 .playmode-card {
-    width: px;
+    display: grid;
     padding: 30px;
     position: relative;
     top: 550px;
@@ -307,7 +310,7 @@ p{
     animation: fadeIn 3s ease forwards;
 }
 
-/* ===== FOOTER ===== */
+
 
 .horror-footer {
     padding: 30px;
