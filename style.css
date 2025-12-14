@@ -162,11 +162,11 @@ p{
        
 }
 .playmode-card {
-    width: 350px;
+    width: px;
     padding: 30px;
     position: relative;
     top: 550px;
-    left: 35%;
+    height: 500px;
     background: radial-gradient(circle at top, #220000, #000);
     border: 2px solid #550000;
     border-radius: 14px;
@@ -280,5 +280,51 @@ p{
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+
+.final-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to top, #000, #1a0000);
+    border-top: 2px solid #400000;
+    position: relative;
+}
+
+.final-text {
+    font-size: 2.5rem;
+    color: crimson;
+    text-shadow: 0 0 15px red;
+    margin-bottom: 20px;
+}
+
+.final-section p {
+    color: #bbb;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    animation: fadeIn 3s ease forwards;
+}
+
+/* ===== FOOTER ===== */
+
+.horror-footer {
+    padding: 30px;
+    text-align: center;
+    background: #000;
+    border-top: 1px solid #300000;
+    position: relative;
+}
+
+.horror-footer p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.warning {
+    margin-top: 10px;
+    color: darkred;
+    animation: flickerLight 2.5s infinite;
 }
 
