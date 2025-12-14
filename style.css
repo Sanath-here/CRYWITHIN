@@ -1,14 +1,18 @@
 .Menus{
     display: flex ;
-    gap: 50px;
+    gap: 100px;
     position: absolute;
-    left: 500px;
-    font-size: larger;
-
+    left: 400px;
+    font-size: medium;
+    color: aliceblue;
+    top: 20px;
 }
 
 .Menus :hover{
     transform: translateY(-9px) scale(1.5);
+    color: red;
+    text-shadow: 0 0 5px whitesmoke;
+    animation: flicker 1s infinite;
 }
 
 #c1{
@@ -40,7 +44,7 @@ svg path{
 
 #pottii{
     height: 700px;
-    background-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     position: relative;
     top: -75px;
@@ -50,19 +54,6 @@ svg path{
 p{
     font-size: 60px;
 }
-<<<<<<< HEAD
-=======
-.top{
-           
-           background-image: url(cry\ within.jpg) ;
-           height: 250px;
-           width: 100%;
-           position: relative;
-           top: -75px;
-
-           
-        }
->>>>>>> c3f94ac3cf0f0e5690fc0ac754dc331dcad21169
 
 .top{
         background-image: url(cry\ within.jpg) ;
@@ -77,17 +68,12 @@ p{
             20%, 24%, 55% { opacity: 0.3; }
         }     
 #flick{
-    font-size: 4rem;
+            font-size: 4rem;
             letter-spacing: 6px;
             color: darkred;
             text-shadow: 0 0 15px red;
-            animation: flicker 3s infinite;
+            animation: flicker 1s infinite;
             position: absolute;
             top: 50px;
-<<<<<<< HEAD
             left: 36%;
-=======
-            left: 38%;
-
->>>>>>> c3f94ac3cf0f0e5690fc0ac754dc331dcad21169
 }
