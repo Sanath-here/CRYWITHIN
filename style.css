@@ -110,24 +110,28 @@ p{
             background: red;
             box-shadow: 0 0 15px red;
         }
-        
-#c2{
-    background-color: rgb(182, 103, 0);
+.c2{
+     background-color: rgb(182, 103, 0);
     height: 500px;
     width: 350px;
     position: relative;
-    top: 700px;
-    left: 10px;
+    top: 750px;
+    left: 1050px;
     border-radius: 20px;
     
-} 
-#c2 img{
+}   
+    
+    
+
+        
+
+.c2 img{
     height: 400px;
     width: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }  
-#c2:hover{
+.c2:hover{
      transform: scale(1.03);
     box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
 }
@@ -153,176 +157,39 @@ p{
 }
 
 #boxes{
-    display: flex;
-    gap: 200px;
     
-
+    gap: 200px;
        
 }
-.playmode-card {
-    display: grid;
-    padding: 30px;
-    position: relative;
-    top: 550px;
-    height: 500px;
-    background: radial-gradient(circle at top, #220000, #000);
-    border: 2px solid #550000;
-    border-radius: 14px;
-    box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
-    overflow: hidden;
-    animation: pulse 4s infinite;
-}
 
-@keyframes pulse {
-    0%, 100% { box-shadow: 0 0 30px rgba(255,0,0,0.4); }
-    50% { box-shadow: 0 0 60px rgba(255,0,0,0.9); }
-}
-
-.playmode-overlay {
+.d1{
+    height: 250px;
+    width: 700px;
+    background-color: rgba(255,0,0,0.15);
     position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,0,0,0.15),
-        transparent
-    );
-    animation: shadowMove 6s infinite linear;
-    pointer-events: none;
+    right: 100px;
+    top: 750px;
+    border-radius: 20px;
+    
+    
 }
-
-@keyframes shadowMove {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
+.d1:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
 }
-
-
-.glitch {
-    position: relative;
-    color: crimson;
-    font-size: 2rem;
-    margin-bottom: 15px;
-    text-shadow: 0 0 10px red;
-}
-
-.glitch::before,
-.glitch::after {
-    content: attr(data-text);
+.d2{
+    height: 250px;
+    width: 700px;
+    background-color: rgba(255,0,0,0.15);
     position: absolute;
-    left: 0;
-    width: 100%;
-    opacity: 0.8;
+    left: 70px;
+    top: 1300px;
+    border-radius: 20px;
+    
+    
+    
 }
-
-.glitch::before {
-    color: red;
-    animation: glitchTop 1.5s infinite linear;
+.d2:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
 }
-
-.glitch::after {
-    color: darkred;
-    animation: glitchBottom 1.2s infinite linear;
-}
-
-@keyframes glitchTop {
-    0% { clip-path: inset(0 0 90% 0); }
-    50% { clip-path: inset(0 0 40% 0); }
-    100% { clip-path: inset(0 0 90% 0); }
-}
-
-@keyframes glitchBottom {
-    0% { clip-path: inset(90% 0 0 0); }
-    50% { clip-path: inset(40% 0 0 0); }
-    100% { clip-path: inset(90% 0 0 0); }
-}
-
-
-.playmode-desc {
-    color: #ddd;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    animation: fadeIn 1.5s ease forwards;
-}
-
-.playmode-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.playmode-list li {
-    margin-bottom: 8px;
-    font-size: 0.9rem;
-    color: #bbb;
-}
-
-
-.playmode-btn {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(to right, #400000, #900000);
-    border: none;
-    color: white;
-    letter-spacing: 2px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.playmode-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px red;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-
-.final-section {
-    padding: 100px 20px;
-    text-align: center;
-    background: linear-gradient(to top, #000, #1a0000);
-    border-top: 2px solid #400000;
-    position: relative;
-}
-
-.final-text {
-    font-size: 2.5rem;
-    color: crimson;
-    text-shadow: 0 0 15px red;
-    margin-bottom: 20px;
-}
-
-.final-section p {
-    color: #bbb;
-    max-width: 700px;
-    margin: auto;
-    font-size: 1rem;
-    line-height: 1.6;
-    animation: fadeIn 3s ease forwards;
-}
-
-
-
-.horror-footer {
-    padding: 30px;
-    text-align: center;
-    background: #000;
-    border-top: 1px solid #300000;
-    position: relative;
-}
-
-.horror-footer p {
-    color: #777;
-    font-size: 0.9rem;
-}
-
-.warning {
-    margin-top: 10px;
-    color: darkred;
-    animation: flickerLight 2.5s infinite;
-}
-
