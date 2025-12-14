@@ -161,3 +161,124 @@ p{
 
        
 }
+.playmode-card {
+    width: 350px;
+    padding: 30px;
+    position: relative;
+    top: 550px;
+    left: 35%;
+    background: radial-gradient(circle at top, #220000, #000);
+    border: 2px solid #550000;
+    border-radius: 14px;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
+    overflow: hidden;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 30px rgba(255,0,0,0.4); }
+    50% { box-shadow: 0 0 60px rgba(255,0,0,0.9); }
+}
+
+.playmode-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,0,0,0.15),
+        transparent
+    );
+    animation: shadowMove 6s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes shadowMove {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+}
+
+
+.glitch {
+    position: relative;
+    color: crimson;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px red;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.glitch::before {
+    color: red;
+    animation: glitchTop 1.5s infinite linear;
+}
+
+.glitch::after {
+    color: darkred;
+    animation: glitchBottom 1.2s infinite linear;
+}
+
+@keyframes glitchTop {
+    0% { clip-path: inset(0 0 90% 0); }
+    50% { clip-path: inset(0 0 40% 0); }
+    100% { clip-path: inset(0 0 90% 0); }
+}
+
+@keyframes glitchBottom {
+    0% { clip-path: inset(90% 0 0 0); }
+    50% { clip-path: inset(40% 0 0 0); }
+    100% { clip-path: inset(90% 0 0 0); }
+}
+
+
+.playmode-desc {
+    color: #ddd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.playmode-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.playmode-list li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+
+.playmode-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #400000, #900000);
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.playmode-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px red;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
