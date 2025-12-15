@@ -6,12 +6,10 @@
     top: 15px;
     font-size: medium;
     text-decoration: none;
-    
     background-color: transparent;
     letter-spacing: 6px;
     color: rgb(228, 228, 228);
     text-shadow: 0 0 15px red;
-     
             
 }
 
@@ -19,9 +17,6 @@
     transform: translateY(-9px) scale(1.2);
     animation: flicker 1s infinite;
     color: rgba(255, 0, 0, 0.5);
-    
-    
-    
 }
 
 #c1{
