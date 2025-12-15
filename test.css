@@ -37,7 +37,10 @@ svg path{
     }
 }
 
-
+.cards{
+  display: flex;
+  gap: 20px;
+}
 /* Card Box */
 .card {
   width: 300px;
