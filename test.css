@@ -1,0 +1,131 @@
+body{
+    background-image: url(cry\ within.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title{
+    text-align: center;
+}
+
+
+
+
+svg path{
+    fill: transparent;
+    stroke: red;
+    stroke-width: 1;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50;
+    animation: svganimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes svganimation{
+    0%{
+        stroke-dashoffset: 100;
+        
+    }
+    80%{
+        
+        fill: transparent;
+        stroke-dasharray: 50;
+    }
+    100%{
+        fill: red;
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* Card Box */
+.card {
+  width: 300px;
+  background: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Main Image */
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.4s ease;
+}
+
+/* Overlay PNG */
+.overlay-img {
+  position: absolute;   
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  
+}
+
+/* Hover Effects */
+.card:hover .main-img {
+  filter: blur(4px);
+ 
+}
+
+.card:hover .overlay-img {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(3);
+}
+
+ .card-content {
+  padding: 0px;
+  text-align: center;
+}
+
+.card-content h3{
+    color: red;
+}
+.card-content p{
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
