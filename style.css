@@ -3,23 +3,20 @@
     gap: 100px;
     position: absolute;
     left: 410px;
-    top: 10px;
+    top: 15px;
     font-size: medium;
-    
+    text-decoration: none;
     background-color: transparent;
     letter-spacing: 6px;
     color: rgb(228, 228, 228);
     text-shadow: 0 0 15px red;
-     
             
 }
 
 .Menus :hover{
-    transform: translateY(-9px) scale(1.5);
+    transform: translateY(-9px) scale(1.2);
     animation: flicker 1s infinite;
     color: rgba(255, 0, 0, 0.5);
-    
-    
 }
 
 #c1{
@@ -107,66 +104,117 @@ p{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
+    
 }
 .btn:hover {
             background: red;
             box-shadow: 0 0 15px red;
         }
-        
-#c2{
-    background-color: rgb(182, 103, 0);
+.c2{
+     background-color: rgb(182, 103, 0);
     height: 500px;
     width: 350px;
     position: relative;
-    top: 700px;
-    left: 10px;
+    top: 750px;
+    left: 1000px;
     border-radius: 20px;
     
-} 
-#c2 img{
+}   
+    
+    
+
+        
+
+.c2 img{
     height: 400px;
     width: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }  
-#c2:hover{
+.c2:hover{
      transform: scale(1.03);
     box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
 }
-#c3{
+.c3{
     background-color: rgb(182, 103, 0);
     height: 500px;
     width: 350px;
     position: relative;
-    top: 700px;
-    right: 70px;
+    top: 850px;
+    left: 100px;
     border-radius: 20px;
-    
+
 } 
-#c3 img{
+.c3 img{
     height: 400px;
     width: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }  
-#c3:hover{
+.c3:hover{
      transform: scale(1.03);
     box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
 }
 
 #boxes{
-    display: flex;
-    gap: 200px;
     
-
+    gap: 200px;
        
 }
+
+.d1{
+    height: 250px;
+    width: 700px;
+    background-color: rgba(255,0,0,0.15);
+    position: absolute;
+    right: 100px;
+    top: 750px;
+    border-radius: 20px;
+    
+    
+}
+.d1:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
+}
+.d2{
+    height: 250px;
+    width: 700px;
+    background-color: rgba(255,0,0,0.15);
+    position: absolute;
+    left: 50px;
+    top: 1300px;
+    border-radius: 20px;
+    
+    
+    
+}
+.d2:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
+}
+.d3{
+    height: 250px;
+    width: 700px;
+    background-color: rgba(255,0,0,0.15);
+    position: absolute;
+    right: 70px;
+    top: 1900px;
+    border-radius: 20px;
+    
+    
+    
+}
+.d3:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
+}
 .playmode-card {
-    width: px;
+   
     padding: 30px;
     position: relative;
-    top: 550px;
-    height: 500px;
+    bottom: -1700px;
+    height: 400px;
     background: radial-gradient(circle at top, #220000, #000);
     border: 2px solid #550000;
     border-radius: 14px;
@@ -289,6 +337,7 @@ p{
     background: linear-gradient(to top, #000, #1a0000);
     border-top: 2px solid #400000;
     position: relative;
+    top: 1600px;
 }
 
 .final-text {
@@ -296,6 +345,7 @@ p{
     color: crimson;
     text-shadow: 0 0 15px red;
     margin-bottom: 20px;
+    background-color: transparent;
 }
 
 .final-section p {
@@ -307,7 +357,7 @@ p{
     animation: fadeIn 3s ease forwards;
 }
 
-/* ===== FOOTER ===== */
+
 
 .horror-footer {
     padding: 30px;
@@ -315,6 +365,7 @@ p{
     background: #000;
     border-top: 1px solid #300000;
     position: relative;
+    top: 1600px;
 }
 
 .horror-footer p {
@@ -327,4 +378,3 @@ p{
     color: darkred;
     animation: flickerLight 2.5s infinite;
 }
-
