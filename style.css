@@ -14,7 +14,7 @@
 }
 
 .Menus :hover{
-    transform: translateY(-9px) scale(1.2);
+    transform: translateY(-3px) scale(1.2);
     animation: flicker 1s infinite;
     color: rgba(255, 0, 0, 0.5);
 }
@@ -30,7 +30,7 @@
     
 }   
 #c1:hover{
-     transform: scale(1.03);
+    transform: scale(1.03);
     box-shadow: 0 0 70px rgba(255, 0, 0, 0.5);
 }
 svg path{
@@ -92,11 +92,8 @@ p{
 
 }
 *{
-    background-color: black;
-    }
-
-
-
+  background-color: rgb(0, 0, 0);
+}
 
 #c1 img{
     height: 400px;
@@ -378,3 +375,11 @@ p{
     color: darkred;
     animation: flickerLight 2.5s infinite;
 }
+.extra{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(234, 232, 232);
+    
+    
+}
+
